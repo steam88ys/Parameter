@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>구구단</h3>
+    <table>
+        <tr th:each="item, stat : ${gugudan}">
+            <td th:text="|${num} x ${stat.index + 1} = ${item}|"></td>
+        </tr>
+    </table>
+</body>
+</html>
